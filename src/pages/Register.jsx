@@ -68,6 +68,8 @@ function Register() {
         username,
         email,
         password,
+      }, {
+        headers: {'Content-Type': 'application/json'}
       });
 
       if (data.status === false) {
